@@ -1,19 +1,258 @@
-<!DOCTYPE html>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>My Resume</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Scott Schau">
+    <meta name="description" content="The online resume of Scott Schau, a computer science student at State College of Florida.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scott Schau - Online Resume</title>
+
+    <style>
+        body {
+            max-width: 1000px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            background-image: url('images/background.jpg');
+        }
+
+        #wrapper {
+            border: 2px solid #009;
+        }
+
+        header {
+            color: white;
+            background-color: #369;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 15px;
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+
+        nav {
+            text-align: center;
+            padding: 12px;
+            background-color: #CCF;
+        }
+
+        main {
+            color: #009;
+            background-color: #FFC;
+            padding: 20px;
+        }
+
+        h2 {
+            color: blue;
+            border-bottom: 1px solid #999;
+        }
+
+        .resume-columns {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            border: 1px solid #369;
+            padding: 15px;
+            min-width: 0;
+        }
+
+        footer {
+            color: white;
+            background-color: #369;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            .resume-columns {
+                flex-direction: column;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>My Resume</h1>
+<div id="wrapper">
 
-    <p>My resume information will be added soon.</p>
+<!-- Header -->
+<header>
 
-    <a href="index.htm">Return Home</a>
+    <img src="images/banner.jpg"
+         alt="Banner for Scott's personal website"
+         class="banner">
+
+    <h1>Scott Schau's Online Resume</h1>
+
+</header>
+
+<hr>
+
+<!-- Navigation -->
+<nav>
+
+    <a href="index.htm">Home</a> |
+    <a href="resume.htm">Resume</a> |
+    <a href="index.htm#about">About Me</a> |
+    <a href="index.htm#interests">Interests</a>
+
+</nav>
+
+<hr>
+
+<!-- Main Content -->
+<main>
+
+    <h2>Scott Schau</h2>
+
+    <address>
+        Bradenton, Florida<br>
+        Email:
+        <a href="mailto:scott152006@gmail.com">
+            scott152006@gmail.com
+        </a><br>
+
+        Phone:
+        <a href="tel:19417247378">
+            (941) 724-7378
+        </a>
+    </address>
+
+    <hr>
+
+    <div class="resume-columns">
+
+        <!-- Left Column -->
+        <div class="column">
+
+            <h2>Professional Summary</h2>
+
+            <p>
+                I am a motivated and reliable college
+                student currently pursuing an
+                Associate's degree in Computer Science.
+                I enjoy learning about technology,
+                solving problems, and developing new
+                skills. I am eager to gain professional
+                experience and contribute to a team.
+            </p>
+
+            <h2>Education</h2>
+
+            <h3>State College of Florida</h3>
+
+            <p>
+                <abbr title="Associate of Science">A.S.</abbr>
+                Degree in Computer Science<br>
+                Bradenton, Florida<br>
+                August 2024 - Present
+            </p>
+
+            <h3>Braden River High School</h3>
+
+            <p>
+                High School Diploma<br>
+                Bradenton, Florida<br>
+                August 2020 - May 2024
+            </p>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+
+            <h2>Experience</h2>
+
+            <h3>Full-Time Student</h3>
+
+            <p>
+                State College of Florida<br>
+                Bradenton, Florida
+            </p>
+
+            <p>
+                Developing knowledge in computer
+                science, web development, and
+                information technology through
+                coursework and academic projects.
+            </p>
+
+            <h2>Skills</h2>
+
+            <ul>
+                <li>Computer skills</li>
+                <li>Problem solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Fast learner</li>
+                <li>Reliable and hardworking</li>
+            </ul>
+
+            <h2>Technology Interests</h2>
+
+            <p>
+                I am interested in computers,
+                programming, web development,
+                and learning how technology
+                can improve everyday life.
+            </p>
+
+            <p>
+                Visit
+                <a href="https://www.w3schools.com">
+                    W3Schools
+                </a>
+                to learn more about web development.
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>
+        <a href="index.htm">
+            Return to Home Page
+        </a>
+    </p>
+
+</main>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        Scott Schau | Online Resume<br>
+        Web Page Development<br>
+        2026
+    </p>
+
+</footer>
+
+</div>
 
 </body>
-
 </html>
