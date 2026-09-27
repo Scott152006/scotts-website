@@ -1,0 +1,126 @@
+body {
+    width: 1000px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    background-image: url("images/background.jpg");
+}
+
+#wrapper {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #009;
+}
+
+/* Header */
+header {
+    color: white;
+    background-color: #369;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 15px;
+}
+
+.banner {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #CCF;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #036;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #369;
+}
+
+/* Main Content */
+main {
+    color: #009;
+    background-color: #FFC;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Home Page Styles */
+#about {
+    text-align: center;
+}
+
+.important {
+    color: #C00;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.technology {
+    color: blue;
+}
+
+/* Resume Styles */
+.resume-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid #369;
+    padding: 15px;
+    min-width: 0;
+}
+
+.resume-columns h2 {
+    border-bottom: 1px solid #999;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: #369;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .resume-columns {
+        flex-direction: column;
+    }
+}
